@@ -7,9 +7,9 @@ public class PlayerDamageRecevier : DamageReceiver
         this.playerCtrl = GetComponent<PlayerCtrl>();
     }
 
-    public override void Reciver(int damage)
+    public override void Receive(int damage)
     {
-        base.Reciver(damage);
+        base.Receive(damage);
         if (this.IsDead())
         {
             this.playerCtrl.playerStatus.Dead();
